@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .optionhover{
+       @apply relative cursor-pointer z-[1] before:-z-10 before:absolute before:bg-gray-200 before:w-7 before:rounded-full before:h-7 before:top-[50%] before:left-[50%] before:opacity-0 before:hover:opacity-100  before:-translate-x-[50%] before:-translate-y-[50%]
+  }
+
+  .fileoptions{
+    @apply relative hover:cursor-pointer before:absolute z-10 before:-z-10 before:w-[calc(100%+1rem)] before:h-[calc(100%+.4rem)]  before:top-[50%]
+            before:left-[50%] before:-translate-x-[50%] before:-translate-y-[50%] before:hover:bg-gray-300/50 before:rounded-[4px]
+  }
+}
+
+*,*::before,*::after{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+html, body,#root{
+  @apply min-h-full h-full;
+  overflow: hidden;
+}
+
+body{
+  @apply bg-primary debug-screens;
+}
+
+/* use all font families */
+@font-face {
+  font-family: "Googlesans";
+  src: url("./assets/Fonts/GoogleSans-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Googlesans";
+  src: url("./assets/Fonts/GoogleSans-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Googlesans";
+  src: url("./assets/Fonts/GoogleSans-Mediumn.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "helvetica";
+  src: url("./assets/Fonts/Helvetica.ttf");
+  font-weight: 300;
+  font-style: normal;
+}

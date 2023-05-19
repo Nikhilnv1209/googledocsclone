@@ -1,0 +1,41 @@
+::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background: rgb(214, 221, 227);
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: #80868b;
+}
+
+.ql-container.ql-snow{
+    height: 1520px !important;
+    min-width: 820px !important;
+    border: none !important;
+    display: flex;
+    /* justify-content: center; */
+    padding-left: max(20vw, 10rem) !important;
+}
+  
+ .ql-editor{
+    padding: 4rem 3rem !important;
+    /* margin: 0 auto !important; */
+    min-width: 820px !important;
+    min-height: 100vh !important;
+    border: 1px solid #c2ced8 !important;
+    background: #fff;
+    caret-color: black !important;
+    font-size: 1rem !important;
+}
+
+.hide{
+    display: none !important;
+}

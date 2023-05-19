@@ -1,0 +1,31 @@
+Thc clone Consisits of 4 components:
+1. header:- This is the Component that is used to render the header of the clone containing the 
+            logo, title of the doc which is editable and other controls.
+            the header components have static icons and links
+
+2. Texteditor:- This is the Component that is used to render the editor of the clone containing the 
+            editable text area and the controls for the text area.
+            Here i had used REACT QUILL text editor Package to implement the text editor.
+
+3. Sidebar:- This is the Component that is used to render the sidebar of the clone containing the
+            links to other google apps as told to do.
+
+4. EditorToolbar - contains the controls for the text editor like bold, italic, underline, etc.
+            it is used as the default configuration of QUILL text editor doesn't provide all the controls
+            hence extra controls are added using this component.
+
+            since REACT QUILL have it's own css so the above component is used in the same way according 
+            to the css of the REACT QUILL.
+
+
+
+5. Toolbaroptions - contains the actual configuration of all the components including the undo and redo
+            buttons.
+
+
+
+css:
+
+1. App.css - contains the css for the Quill custom classes and the scrollbar.
+2. Index.css - contains two custom classes for hover effect and the fonts import along with some default 
+                css for the html,body and root id.        
